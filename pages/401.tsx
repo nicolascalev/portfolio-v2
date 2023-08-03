@@ -1,5 +1,5 @@
-import React from "react";
-import AppError from "../components/ui/AppError";
+import React from 'react';
+import AppError from '../components/ui/AppError';
 
 function UnauthorizedPage() {
   return (
