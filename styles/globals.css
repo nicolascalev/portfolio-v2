@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@media (-webkit-min-device-pixel-ratio:0) and (max-width:800px) {
+
+  input,
+  select,
+  textarea {
+    font-size: 16px !important;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  letter-spacing: -.025em;
+}
+
+.flex_align_center {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.tablist_nowrap::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.tablist_nowrap {
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  overflow-y: visible;
+  padding-bottom: 2px;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.text__nowrap {
+  white-space: nowrap;
+}
+
+.lpt {
+  padding-top: 1rem;
+}
+
+.d_xs_none {
+  display: none;
+}
+
+/* medium */
+@media (min-width: 48em) {
+  .lpt {
+    padding-top: 4rem;
+  }
+
+  .d_xs_none {
+    display: flex;
+  }
+
+  .d_md_none {
+    display: none;
+  }
+}
+
+.pulse {
+  position: relative;
+  width: 1rem;
+  height: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pulse_in {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  background-color: var(--mantine-color-lime-6);
+  border-radius: 50%;
+}
+
+.pulse_out {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--mantine-color-lime-6);
+  opacity: .10;
+  border-radius: 50%;
+  animation: pulse_animation 2s ease-in-out 0s infinite;
+}
+
+@keyframes pulse_animation {
+  0% {
+    transform: scale(0);
+  }
+
+  60% {
+    transform: scale(1.5);
+  }
+
+  100% {
+    transform: scale(0);
+  }
+}
+
+.ticker__container {
+  height: 24px;
+  overflow: hidden;
+}
+
+.ticker {
+  /* transform: translateY(24px); */
+  animation: inout 3s linear 0s infinite;
+}
+
+@keyframes inout {
+  0% {
+    transform: translateY(24px);
+  }
+
+  8% {
+    transform: translateY(0);
+  }
+
+  92% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(24px);
+  }
+}
