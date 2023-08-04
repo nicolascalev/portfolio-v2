@@ -36,15 +36,7 @@ function AppHeader() {
             Nicolas Guillen
           </Text>
           <Text className="ticker__container">
-            {titles.map((title, i) => (
-              <Text
-                key={i}
-                hidden={i !== currentTitle}
-                className={startedAnimation ? 'ticker' : undefined}
-              >
-                {title}
-              </Text>
-            ))}
+            <Text className={startedAnimation ? 'ticker' : undefined}>{titles[currentTitle]}</Text>
           </Text>
         </div>
         <Avatar radius="100%" size="lg" src="https://github.com/nicolascalev.png" />

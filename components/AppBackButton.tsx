@@ -12,6 +12,7 @@ function AppBackButton(props: ButtonProps) {
       color="gray"
       leftIcon={<IconChevronLeft size={16} />}
       onClick={() => router.back()}
+      size="sm"
       {...props}
     >
       Back

@@ -3,8 +3,8 @@ import { Card, Text } from '@mantine/core';
 
 function AppBadge({ children }: { children: React.ReactNode }) {
   return (
-    <Card withBorder py="2px">
-      <Text size="sm">{children}</Text>
+    <Card withBorder py="2px" px="1rem">
+      <Text size="xs">{children}</Text>
     </Card>
   );
 }

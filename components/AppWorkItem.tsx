@@ -23,7 +23,7 @@ function AppWorkItem(props: AppWorkItemProps) {
           src={props.logo || undefined}
           style={{ border: '1px solid var(--mantine-color-dark-3)' }}
         />
-        <Text fw={500}>{props.label}</Text>
+        <Text fw={500} mb="xs">{props.label}</Text>
       </Group>
       <Box pl="19px" pb="md">
         <Box

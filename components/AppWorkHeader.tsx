@@ -45,18 +45,7 @@ function AppWorkHeader() {
         ))}
       </Group>
       {/* live site / year / time frame */}
-      <Group position="apart" mb="xl" align="center">
-        {post.projectUrl && (
-          <Button
-            component="a"
-            href={post.projectUrl}
-            target="_blank"
-            variant="default"
-            rightIcon={<IconArrowUpRight size={16} />}
-          >
-            Live
-          </Button>
-        )}
+      <Group mb="md" align="center">
         {post.year && (
           <div>
             <Text component="span" fw={600} mr="xs">
@@ -74,6 +63,17 @@ function AppWorkHeader() {
           </div>
         )}
       </Group>
+      {post.projectUrl && (
+        <Button
+          component="a"
+          href={post.projectUrl}
+          target="_blank"
+          rightIcon={<IconArrowUpRight size={16} />}
+          mb="xl"
+        >
+          Live
+        </Button>
+      )}
       <Divider />
     </>
   );

@@ -17,7 +17,7 @@ export const posts: Post[] = [
   {
     label: 'Inkker',
     headline:
-      'Inkker is like PeersPace for the tattoo industry. It allows artists to work from multiple places and helps tattoo shops bring new talent.',
+      'PeersPace for the tattoo industry. It allows artists to work from multiple places and helps tattoo shops bring new talent.',
     summary:
       'Inkker was built with Strapi, Next js, Auth0 and deployed on Digital Ocean for the first version, but I am building v2 with different technologies with the goal of reducing the cost of my servers using some free tiers.',
     articlePath: '/work/inkker',
@@ -40,6 +40,21 @@ export const posts: Post[] = [
     type: 'experience',
   },
   {
+    label: 'Devtalk AI',
+    headline: 'Using AI to bridge the gap between non-technical individuals and developers',
+    summary:
+      'I used the Open AI api, Stripe, Next js, Prisma and Auth0 to create a subscription app with a per-seat model.',
+    articlePath: '/work/devtalk-ai',
+    featured: true,
+    tags: ['AI', 'Open AI', 'Stripe', 'Next js', 'Prisma', 'Node'],
+    timeframe: '2 weeks',
+    year: 2023,
+    logo: 'https://www.devtalkai.com/favicon.svg',
+    projectUrl: 'https://www.devtalkai.com/',
+    type: 'experience',
+    thumbnail: 'https://www.devtalkai.com/thumbnail.png',
+  },
+  {
     label: '09 Tattoo automations',
     headline:
       'Automation tools for tattoo businesses. Save time and offer an improved and personalized customer experience.',
@@ -53,7 +68,7 @@ export const posts: Post[] = [
     logo: 'https://09tattooautomations.vercel.app/favicon.svg',
     projectUrl: 'https://09tattooautomations.vercel.app/',
     type: 'service',
-    thumbnail: 'https://09tattooautomations.vercel.app/thumbnail.png',
+    thumbnail: '/9ta-thumbnail.png',
   },
 ];
 

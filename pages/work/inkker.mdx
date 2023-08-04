@@ -1,12 +1,32 @@
 import AppWorkHeader from 'components/AppWorkHeader';
-import AppBookCallButton from 'components/AppBookCallButton';
 
 <AppWorkHeader />
 
-Here's my summary mate
+## Challenge
 
-How about we don't do titles so that the text does not look ugly
+In a world where a lot of jobs can be done remotely and there is technology available for a lot of niches. Tattoo artists don't have easy ways to connect with studios in other places to travel and work. That also affects tattoo shops because they would benefit from bringing guest artists and filling up their available spots. As a tattoo artist, you need more than a laptop to work, and depending on the country, there may be regulation and laws in place that need to be followed.
 
-We can keep it pretty like what we are trying to achieve here you know what I am saying
+This opens up new opportunities for both parties to create a new source of income and grow their brand.
 
-<AppBookCallButton fullWidth />
+My proof of concept are Facebook groups created for this purpose. There are lots of them, where people connect to find spots in studios.
+
+## Solution
+
+PeerSpace for the tattoo industry.
+
+I decided to launch a web app that allows studios to list their available spots to other artists. It's up to the studio wether they want to accept the artist or not.
+Artists can filter the spots by choosing the area and different amenities that they want.
+
+## Key features
+
+* Have two types of profile, artist and studio admin.
+* Allow studio administrators to list available spots, and manage bookings.
+* Allow artists to find available spots and book them.
+* Index spot pages so they show on google search, and display different options for unauthenticated users.
+* Allow tattoo shops and artists to leave reviews for each other.
+
+## Results
+
+It took me around 3 months to launch the app. I chose the tools listed at the top of the page because I thought that would help be build an MVP as soon as possible. Using Strapi was a mistake, it was hard to deploy and it lacks some functionality that I needed to add myself and that took some time. I deployed my backend in digital ocean and it's kind of expensive for me right now.
+
+Right now I am building v2 with technologies that I feel comfortable maintaining in the future. I will deploy in Vercel with a free tier to cut costs, and I will implement some policies or guards on the API routes.

@@ -8,13 +8,19 @@ export default function AppMobileMenu(props: ActionIconProps) {
 
   return (
     <>
-      <Drawer opened={opened} onClose={close} title={<Text fw={500}>Menu</Text>} position="bottom">
+      <Drawer
+        opened={opened}
+        onClose={close}
+        title={<Text fw={500}>Menu</Text>}
+        position="left"
+        size="100%"
+      >
         <Stack>
           <AppHeaderLinks />
         </Stack>
       </Drawer>
 
-      <ActionIcon onClick={open} variant="default" size="sm" {...props}>
+      <ActionIcon onClick={open} variant="default" {...props}>
         <IconMenu size="0.875rem" />
       </ActionIcon>
     </>
