@@ -28,19 +28,19 @@ function WorkPage() {
       />
       {workType === 'all' &&
         posts.map((post, i) => (
-          <Box key={i} mb="lg" className="animate__animated animate__fadeIn">
+          <Box key={i} mb="2rem" className="animate__animated animate__fadeIn">
             <AppWorkItem {...post} />
           </Box>
         ))}
       {workType === 'experience' &&
         experiencePosts.map((post, i) => (
-          <Box key={i} mb="lg" className="animate__animated animate__fadeIn">
+          <Box key={i} mb="2rem" className="animate__animated animate__fadeIn">
             <AppWorkItem {...post} />
           </Box>
         ))}
       {workType === 'service' &&
         servicePosts.map((post, i) => (
-          <Box key={i} mb="lg" className="animate__animated animate__fadeIn">
+          <Box key={i} mb="2rem" className="animate__animated animate__fadeIn">
             <AppWorkItem {...post} />
           </Box>
         ))}

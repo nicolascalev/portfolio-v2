@@ -14,21 +14,23 @@ type AppWorkItemProps = {
 };
 
 function AppWorkItem(props: AppWorkItemProps) {
+  // this line helps disable the twitter like look to it, in case you want to remove it
+  const showBorder = true;
+
   return (
     <div>
-      <Group noWrap>
+      <Group noWrap mb="xs">
         <Avatar
           radius="xl"
-          mb="xs"
           src={props.logo || undefined}
-          style={{ border: '1px solid var(--mantine-color-dark-3)' }}
+          style={{ border: '1px solid var(--mantine-color-dark-5)' }}
         />
-        <Text fw={500} mb="xs">{props.label}</Text>
+        <Text fw={500}>{props.label}</Text>
       </Group>
-      <Box pl="19px" pb="md">
+      <Box pl={showBorder ? '19px' : undefined} pb="md">
         <Box
-          pl="calc(19px + 0.625rem)"
-          style={{ borderLeft: '2px solid var(--mantine-color-dark-3)' }}
+          pl={showBorder ? 'calc(19px + 0.625rem)' : undefined}
+          style={{ borderLeft: showBorder ? '2px solid var(--mantine-color-dark-5)' : undefined }}
         >
           <Text>{props.summary}</Text>
           {props.thumbnail && <Image src={props.thumbnail} mt="md" radius="md" />}

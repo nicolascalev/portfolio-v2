@@ -70,6 +70,20 @@ export const posts: Post[] = [
     type: 'service',
     thumbnail: '/9ta-thumbnail.png',
   },
+  {
+    label: 'Toptierperk',
+    headline:
+      'I developed a B2B platform where employers can find discounts or benefits for their employees.',
+    summary:
+      'I developed a B2B platform where employers can find discounts or benefits for their employees.',
+    articlePath: '/work/toptierperk',
+    featured: false,
+    tags: ['React', 'Next js', 'Javascript', 'Auth0', 'Prisma', 'SQL', 'B2B'],
+    timeframe: '9 months',
+    year: 2022,
+    logo: '/ttplogo.png',
+    type: 'experience',
+  },
 ];
 
 export const featuredPosts = posts.filter((post) => post.featured === true);

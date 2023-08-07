@@ -52,7 +52,7 @@ export default function HomePage() {
         </Group>
       </Box>
       {featuredPosts.map((post, i) => (
-        <Box key={i} mb="xl">
+        <Box key={i} mb="2rem">
           <AppWorkItem {...post} />
         </Box>
       ))}

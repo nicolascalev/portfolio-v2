@@ -19,7 +19,7 @@ h6 {
   letter-spacing: -.025em;
 }
 
-ul {
+ul, ol {
   padding-inline-start: 16px;
 }
 
