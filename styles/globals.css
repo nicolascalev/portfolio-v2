@@ -19,6 +19,10 @@ h6 {
   letter-spacing: -.025em;
 }
 
+a {
+  color: inherit;
+}
+
 ul, ol {
   padding-inline-start: 16px;
 }

@@ -23,7 +23,7 @@ export default function App(props: AppProps) {
       <Head>
         <title>{title}</title>
         <meta name="description" content={description} />
-        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href={`${url}/favicon.ico`} />
 
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="en_US" />
@@ -39,8 +39,7 @@ export default function App(props: AppProps) {
         <meta name="twitter:url" content={url} />
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={image} />
-        <link rel="shortcut icon" href="/favicon.ico" />
-        <link rel="shortcut icon" href="/favicon.svg" />
+        <link rel="shortcut icon" href={`${url}/favicon.svg`} />
         <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
       </Head>
 
