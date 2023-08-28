@@ -12,7 +12,7 @@ export default function App(props: AppProps) {
   const { Component, pageProps } = props;
 
   const title =
-    'Nicolas Guillen @nicolascalev | Software Developer | Web Developer (Next js, Node, Javascript, React, SQL...)';
+    'Nicolas Guillen Full stack web developer | Javascript, Next js, Node js, React | Software developer @nicolascalev';
   const description =
     'I have been coding since 2017, I have worked for 3 different companies and launched my own projects. I am available for new opportunities.';
   const url = 'https://nicolascalev.com';
