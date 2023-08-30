@@ -89,7 +89,7 @@ function AboutPage() {
         <Button
           variant="default"
           component="a"
-          href="/Nicolas-Guillen-CV-Jul-2023-(C)%20(1).pdf"
+          href="/resume.pdf"
           target="_blank"
         >
           Resume
