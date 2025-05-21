@@ -15,6 +15,20 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    label: 'HireSkills',
+    headline: 'Helping developers with less traditional experience get hired.',
+    summary: 'I built HireSkills with Next js, Mantine UI, Chat GPT, Prisma and deployed the frontend on Vercel. And the database on Digital Ocean.',
+    tags: ['React', 'Next js', 'Javascript', 'Clerk', 'Prisma', 'SQL', 'Digital Ocean'],
+    timeframe: '1 month',
+    year: 2024,
+    logo: 'https://hireskills.vercel.app/favicon.svg',
+    projectUrl: 'https://hireskills.vercel.app/',
+    type: 'experience',
+    articlePath: '/work/hireskills',
+    featured: true,
+    thumbnail: '/hireskillsthumbnail.png',
+  },
+  {
     label: 'Inkker',
     headline:
       'PeersPace for the tattoo industry. It allows artists to work from multiple places and helps tattoo shops bring new talent.',
@@ -35,9 +49,10 @@ export const posts: Post[] = [
     ],
     timeframe: '6 months',
     year: 2023,
-    logo: 'https://www.inkker.com/favicon.svg',
-    projectUrl: 'https://www.inkker.com/',
+    logo: '/inkkerlogo.svg',
+    projectUrl: 'https://www.youtube.com/watch?v=5zgk2bBR858',
     type: 'experience',
+    thumbnail: '/inkkerthumbnail.png',
   },
   {
     label: 'Devtalk AI',
@@ -49,10 +64,9 @@ export const posts: Post[] = [
     tags: ['AI', 'Open AI', 'Stripe', 'Next js', 'Prisma', 'Node'],
     timeframe: '2 weeks',
     year: 2023,
-    logo: 'https://www.devtalkai.com/favicon.svg',
-    projectUrl: 'https://www.devtalkai.com/',
+    logo: '/devtalklogo.svg',
+    projectUrl: 'https://github.com/nicolascalev/devtalkai',
     type: 'experience',
-    thumbnail: 'https://www.devtalkai.com/thumbnail.png',
   },
   {
     label: '09 Tattoo automations',
@@ -83,6 +97,7 @@ export const posts: Post[] = [
     year: 2022,
     logo: '/ttplogo.png',
     type: 'experience',
+    projectUrl: 'https://github.com/nicolascalev/toptierperk-next',
   },
 ];
 
