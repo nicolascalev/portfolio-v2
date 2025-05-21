@@ -86,12 +86,7 @@ function AboutPage() {
       </Anchor>
       <Group position="apart" align="center">
         <AppAvailability />
-        <Button
-          variant="default"
-          component="a"
-          href="/resume.pdf"
-          target="_blank"
-        >
+        <Button variant="default" component="a" href="/resume.pdf" target="_blank">
           Resume
         </Button>
       </Group>
@@ -106,7 +101,30 @@ function AboutPage() {
       <Box py="lg">
         <SimpleGrid cols={1} breakpoints={[{ minWidth: 'sm', cols: 2 }]}>
           <div>
-            <Text>Jan 2023 - Present</Text>
+            <Text>April 2024 - Present</Text>
+            <Text fw={500} size="lg">
+              Wondersauce
+            </Text>
+            <Text>Web Developer</Text>
+          </div>
+          <div>
+            <Text c="dimmed">
+              Next js, Javascript, WordPress, Node, React, PHP.
+              <br />
+              I built and contributed to projects for marketing activations.
+              <br />
+              Full-stack websites would be displayed during marketing events to collect customer
+              information.
+              <br />I added features and maintained WordPress websites.
+            </Text>
+          </div>
+        </SimpleGrid>
+      </Box>
+      <Divider />
+      <Box py="lg">
+        <SimpleGrid cols={1} breakpoints={[{ minWidth: 'sm', cols: 2 }]}>
+          <div>
+            <Text>Jan 2023 - April 2024</Text>
             <Text fw={500} size="lg">
               Applied to YC
             </Text>
